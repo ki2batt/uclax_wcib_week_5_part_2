@@ -10,7 +10,7 @@ window.onload = function () {
     return array[random];
   }
 
-  var storyText = 'It was 94 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.';
+  var storyText = 'It was 94 fahrenheit outside - hotter than Han Solos kitchen , so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.';
 
   var insertX = ['Willy the Goblin','Big Daddy','Father Christmas'];
   var insertY = ['the soup kitchen','Disneyland','the White House'];
@@ -31,13 +31,21 @@ window.onload = function () {
     newStory = newStory.replace(':insertz:',zItem);
 
     if(customName.value !== '') {
+      console.log("SWAP BOB");
       var name = customName.value;
       newStory = newStory.replace('Bob',name);
     }
+    else {
+      console.log("NO CUSTOM NAME");
+    }
 
     if(customMovieCharacter.value !== ''){
+      console.log("CUSTOM CHARACTER");
       var moviecharacter = customMovieCharacter.value;
-      newStory = newStory.replace('han ssolo',moviecharacter);
+      newStory = newStory.replace('Han Solo',moviecharacter);
+    }
+    else {
+      console.log("NO CUSTOM CHARCTER");
     }
 
     if(document.getElementById("themilkyway").checked) {
