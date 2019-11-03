@@ -1,0 +1,44 @@
+body {
+  padding-top: 5rem;
+  font-family: 'McLaren', cursive;
+
+}
+
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.result {
+  text-align: left;
+}
+
+.story {
+  width: 39%;
+  display: inline-block;
+  margin-left: 9%;
+}
+
+.image {
+    width: 39%;
+    display: inline-block;
+    margin: auto;
+    margin-left: 9%;
+}
+
+.image img {
+  width: 100%;
+}
+
+.radio-buttons, .random-button {
+  margin: auto !important;
+}
+
+.row {
+  margin-bottom: 10px;
+}
+
+.name-section {
+  border: 1px solid grey;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.5);
+}

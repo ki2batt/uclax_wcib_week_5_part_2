@@ -1,26 +1,83 @@
 <!doctype html>
 <html class="" lang="en">
 
-  <head>
-    <meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Week 5, Part 2</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
 
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=McLaren&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+  <title>Silly Story Generator</title>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
-  </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+</head>
 
-  <body>
+<body>
+  <main role="main" class="container">
 
-    <h1>Week 5, Part 2</h1>
+    <div class="starter-template">
+      <h1>Silly Story Generator</h1>
+      <ol class="lead">Enter in  custom name.<br>Enter in your favorite movie character.<br>Select what galaxy you're from.<br>Then click the button to generate your very own silly story!
+      </ol>
 
-	</body>
+      <div id="name-section">
+
+        <div class="row">
+          <div class="col-xs-6 col-md-4">
+            <label class="name-section" for="customname">Enter in a custom name:</label>
+          </div>
+          <div class="col-xs-6 col-md-4">
+            <input class="name-section" id="customname" type="text" placeholder="">
+          </div>
+          <div class="col-xs-6 col-md-4 radio-buttons">
+            <p>What galaxy are you from?</p>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-xs-6 col-md-4">
+            <label class="name-section" for="customoviecharacter">Enter in a favorite movie character:</label>
+          </div>
+          <div class="col-xs-6 col-md-4">
+            <input class="name-section" id="customoviecharacter" type="text" placeholder="">
+          </div>
+
+          <div class="col-xs-6 col-md-4">
+            <label for="themilkyway">The Milky Way</label><input id="themilkyway" type="radio" name="themilkyway-andromeda" value="themilkyway" checked>
+            <label for="andromeda">Andromeda</label><input id="andromeda" type="radio" name="themilkyway-andromeda" value="andromeda">
+          </div>
+        </div>
+
+
+
+        <div class="row">
+          <div class="col-xs-12 col-md-4 random-button">
+            <button class="randomize">Generate random story</button>
+          </div>
+        </div>
+
+
+        <div class="result">
+          <div class="story">
+          </div>
+          <div class="image">
+            <img id="image_box" src="">
+          </div>
+        </div>
+
+      </main><!-- /.container -->
+      <footer>
+      </footer>
+
+      <script src="js/scripts.js"></script>
+
+    </body>
 
 </html>
